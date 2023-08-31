@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -7,7 +7,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{9E827185-7CC4-40D0-B602-4D10F6AB1672}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>DateRange</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
@@ -108,11 +109,6 @@
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
-    <Compile Include="MyGridControl\MyDateFilterPopup.vb" />
-    <Compile Include="MyGridControl\MyGridColumn.vb" />
-    <Compile Include="MyGridControl\MyGridControl.vb" />
-    <Compile Include="MyGridControl\MyGridView.vb" />
-    <Compile Include="MyGridControl\MyOptionsColumnFilter.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <EmbeddedResource Include="Form1.resx">

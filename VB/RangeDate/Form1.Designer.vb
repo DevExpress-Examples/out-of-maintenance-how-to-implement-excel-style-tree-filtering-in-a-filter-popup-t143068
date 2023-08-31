@@ -83,73 +83,76 @@
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E4265
 
+Imports DevExpress.XtraGrid
+Imports DevExpress.XtraGrid.Views.Grid
+
 Namespace DateRange
-	Partial Public Class Form1
-		''' <summary>
-		''' Required designer variable.
-		''' </summary>
-		Private components As System.ComponentModel.IContainer = Nothing
+    Partial Public Class Form1
+        ''' <summary>
+        ''' Required designer variable.
+        ''' </summary>
+        Private components As System.ComponentModel.IContainer = Nothing
 
-		''' <summary>
-		''' Clean up any resources being used.
-		''' </summary>
-		''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-			If disposing AndAlso (components IsNot Nothing) Then
-				components.Dispose()
-			End If
-			MyBase.Dispose(disposing)
-		End Sub
+        ''' <summary>
+        ''' Clean up any resources being used.
+        ''' </summary>
+        ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+            If disposing AndAlso (components IsNot Nothing) Then
+                components.Dispose()
+            End If
+            MyBase.Dispose(disposing)
+        End Sub
 
-		#Region "Windows Form Designer generated code"
-		Private Sub InitializeComponent()
-			Me.myGridControl1 = New DateRange.MyGridControl()
-			Me.myGridView1 = New DateRange.MyGridView()
-			DirectCast(Me.myGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-			DirectCast(Me.myGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-			Me.SuspendLayout()
-			' 
-			' myGridControl1
-			' 
-			Me.myGridControl1.Dock = System.Windows.Forms.DockStyle.Fill
-			Me.myGridControl1.Location = New System.Drawing.Point(0, 0)
-			Me.myGridControl1.LookAndFeel.SkinName = "Office 2010 Silver"
-			Me.myGridControl1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat
-			Me.myGridControl1.MainView = Me.myGridView1
-			Me.myGridControl1.Name = "myGridControl1"
-			Me.myGridControl1.Size = New System.Drawing.Size(608, 487)
-			Me.myGridControl1.TabIndex = 0
-			Me.myGridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() { Me.myGridView1})
-			' 
-			' myGridView1
-			' 
-			Me.myGridView1.GridControl = Me.myGridControl1
-			Me.myGridView1.Name = "myGridView1"
-			Me.myGridView1.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button
-			Me.myGridView1.treeListSource = Nothing
-			' 
-			' Form1
-			' 
-			Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
-			Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-			Me.ClientSize = New System.Drawing.Size(608, 487)
-			Me.Controls.Add(Me.myGridControl1)
-			Me.Name = "Form1"
-			Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-			Me.Text = "GridView Custom Column Filter "
-'			Me.Load += New System.EventHandler(Me.Form1_Load)
-			DirectCast(Me.myGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
-			DirectCast(Me.myGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-			Me.ResumeLayout(False)
+#Region "Windows Form Designer generated code"
+        Private Sub InitializeComponent()
+            Me.myGridControl1 = New GridControl()
+            Me.myGridView1 = New GridView()
+            DirectCast(Me.myGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            DirectCast(Me.myGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.SuspendLayout()
+            ' 
+            ' myGridControl1
+            ' 
+            Me.myGridControl1.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.myGridControl1.Location = New System.Drawing.Point(0, 0)
+            Me.myGridControl1.LookAndFeel.SkinName = "Office 2010 Silver"
+            Me.myGridControl1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat
+            Me.myGridControl1.MainView = Me.myGridView1
+            Me.myGridControl1.Name = "myGridControl1"
+            Me.myGridControl1.Size = New System.Drawing.Size(608, 487)
+            Me.myGridControl1.TabIndex = 0
+            Me.myGridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.myGridView1})
+            ' 
+            ' myGridView1
+            ' 
+            Me.myGridView1.GridControl = Me.myGridControl1
+            Me.myGridView1.Name = "myGridView1"
+            Me.myGridView1.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button
 
-		End Sub
+            ' 
+            ' Form1
+            ' 
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0F, 13.0F)
+            Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+            Me.ClientSize = New System.Drawing.Size(608, 487)
+            Me.Controls.Add(Me.myGridControl1)
+            Me.Name = "Form1"
+            Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+            Me.Text = "GridView Custom Column Filter "
+            '			Me.Load += New System.EventHandler(Me.Form1_Load)
+            DirectCast(Me.myGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            DirectCast(Me.myGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+            Me.ResumeLayout(False)
 
-		#End Region
+        End Sub
 
-		Private myGridControl1 As MyGridControl
-		Private myGridView1 As MyGridView
+#End Region
+
+        Private myGridControl1 As GridControl
+        Private myGridView1 As GridView
 
 
-	End Class
+    End Class
 End Namespace
 
