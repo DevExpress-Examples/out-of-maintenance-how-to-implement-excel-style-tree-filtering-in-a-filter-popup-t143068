@@ -36,7 +36,7 @@ namespace DateRange
                 dataTable.Rows.Add(new object[] { DateTime.Today.AddDays(r.Next(1000)), "test" });
             }
             myGridControl1.DataSource = dataTable;
-            myGridView1.OptionsFilter.ColumnFilterPopupMode = DevExpress.XtraGrid.Columns.ColumnFilterPopupMode.Classic;
+            myGridView1.OptionsFilter.ColumnFilterPopupMode = DevExpress.XtraGrid.Columns.ColumnFilterPopupMode.Excel;
         }
 
     }
